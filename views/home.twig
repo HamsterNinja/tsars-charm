@@ -1,0 +1,93 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+<div class="main-slick">
+	{% for item in 0..3 %}
+	<div class="main-slick-content">
+		<div class="container">
+			<div class="main-slick-info">
+				<div class="main-slick-before-title">Коллекция</div>
+				<div class="main-slick-title">«Грозный»</div>
+				<div class="main-slick-text">Краткое описание коллекции “Грозный”. Далее идет рыба-тект. Консультация с широким активом позволяет оценить значение.</div>
+				<a class="main-slick-link" href="">Каталог</a>
+			</div>
+			<div class="main-slick-products">
+				{% for item in 0..2 %}
+				<a href="" class="slick-product-item">
+					<div class="slick-product-image">
+						<img src="{{ site.theme.link }}/assets/images/product_m.png" alt="">
+					</div>
+					<div class="slick-product-info">
+						<div class="slick-product-info">
+							<div class="slick-product-name">Кольцо из монет</div>
+							<div class="slick-product-price">2 000,00 ₽</div>
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<div class="main-page-collections">
+	<div class="container">
+		{% for item in 0..2 %}
+		<div class="collections-item">
+			<div class="collections-item-before-title">Коллекция</div>
+			<div class="collections-item-title">«Романовы»</div>
+			<div class="collections-item-text">Коллекция содержит в себе монеты 16-19 века.</div>
+			<a class="collections-item-link" href="">Подробнее</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+<div class="new-products">
+	<div class="container">
+		<div class="new-products-title">Новые поступления</div>
+		<div class="new-products-slick">
+			{% for item in 0..5 %}
+			<div class="new-products-slick-content">
+				<a href="" class="product-item">
+					<div class="product-image">
+						<img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="main-page-company">
+	<div class="container">
+		<div class="main-page-company-content">
+			<div class="main-page-company-inner">	
+				<div class="main-page-company-title">Добро пожаловать в Царский шармъ</div>
+				<div class="main-page-company-text">И нет сомнений, что базовые сценарии поведения пользователей призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов. Принимая во внимание показатели успешности, экономическая повестка сегодняшнего дня способствует повышению качества благоприятных перспектив.</div>
+				<div class="main-page-company-instagram">
+					<div class="main-page-company-instagram-text">Подпишитесь на наш инстаграм!</div>
+					<a href="" class="main-page-company-link">royalsharm.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-page-news">
+	<div class="container">
+		<div class="main-page-news-header">
+			<div class="main-page-news-title">Новости</div>
+			<a href="" class="main-page-news-link">Все новости</a>
+		</div>
+		<div class="main-page-news-content">
+			{% for item in 0..3 %}
+			<a href="" class="main-page-news-item">
+				<div class="main-page-news-image"><img src="{{ site.theme.link }}/assets/images/news.jpg" alt=""></div>
+				<div class="main-page-news-date">20/03/2020</div>
+				<div class="main-page-news-name">Комитет Совфеда подготовил предложения по поддержке бизнеса</div>
+				<div class="main-page-news-preview">Экономический комитет Совфеда направил в рабочую группу СФ...</div>
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+</main>
+{% include "partials/footer.twig" %}
