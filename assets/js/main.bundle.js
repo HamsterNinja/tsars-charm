@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "b6cfa1da73291149c43a";
+/******/ 	var hotCurrentHash = "8204d8ff2434ebdc4983";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1051,7 +1051,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n//# sourceURL=webpack:///./js/src/app.js?");
+eval("\n\n$(document).ready(function () {\n  $('.main-slick').slick({\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    arrows: true,\n    fade: true\n  });\n  $('.new-products-slick').slick({\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    arrows: true\n  });\n  $('.product-slick-for').slick({\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    arrows: false,\n    fade: true,\n    asNavFor: '.product-slick-nav'\n  });\n  $('.product-slick-nav').slick({\n    slidesToShow: 4,\n    slidesToScroll: 1,\n    vertical: true,\n    asNavFor: '.product-slick-for',\n    dots: false,\n    arrows: false,\n    centerMode: false,\n    focusOnSelect: true,\n    responsive: [{\n      breakpoint: 580,\n      settings: {\n        slidesToShow: 3,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 460,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 1\n      }\n    } // You can unslick at a given breakpoint now by adding:\n    // settings: \"unslick\"\n    // instead of a settings object\n    ]\n  });\n});\n\n//# sourceURL=webpack:///./js/src/app.js?");
 
 /***/ }),
 

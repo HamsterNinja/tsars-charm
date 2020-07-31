@@ -1,0 +1,108 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+<div class="bread-container">
+	<div class="container">		
+		<nav class="woocommerce-breadcrumb"><a href="">Главная</a>&nbsp;/&nbsp;О нас</nav>
+	</div>
+</div>
+<div class="product-page-top">
+	<div class="container">
+		<div class="product-gallery">
+			<div class="product-slick-for">		
+				{% for item in 0..4 %}    
+				<div class="product-slick-for-content">
+					<div class="circle circle-1 _big _no-border"></div>
+					<div class="circle circle-2 _big _no-border"></div>
+					<div class="circle circle-3 _big _no-border"></div>
+					<div class="circle circle-4 _big _no-border"></div>
+				    <img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+				</div>
+				{% endfor %}
+			</div>
+			<div class="product-slick-nav">
+				{% for item in 0..4 %}    
+				<div class="product-slick-nav-content">
+				    <img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="product-top-info">
+			<h1 class="product-title">Серьги-гвоздики из монеты времён "Ивана Грозного"</h1>
+			<div class="product-top-info-prices">
+				<div class="old-price">2 000,00 ₽</div>
+				<div class="current-price">22 000,00 ₽</div>
+			</div>
+			<div class="product-top-info-buttons">
+				<div class="products-item-cart products-item--cart">	
+					<a href="">
+						<div class="circle circle-1"></div>
+						<div class="circle circle-2"></div>
+						<div class="circle circle-3"></div>
+						<div class="circle circle-4"></div>
+						Добавить в корзину
+					</a>
+				</div>
+				<div class="products-item-one-click">	
+					<a href="">
+						<div class="circle circle-1"></div>
+						<div class="circle circle-2"></div>
+						<div class="circle circle-3"></div>
+						<div class="circle circle-4"></div>
+						Купить в 1 клик
+					</a>
+				</div>
+			</div>
+			<div class="product-info-description-name">Описание:</div>
+			<div class="product-info-description-text">
+				С другой стороны, современная методология разработки выявляет срочную потребность системы массового участия. С учётом сложившейся международной обстановки, начало повседневной работы по формированию позиции способствует подготовке и реализации переосмысления внешнеэкономических политик. В рамках спецификации современных.
+			</div>
+		</div>
+	</div>
+</div>
+<div class="product-page-bottom">
+		<div class="container">
+			<div class="populars-title">Рекомендуем</div>
+			<div class="populars-content">
+			{% for item in 0..3 %}
+				<div class="product-item">
+					<a href class="product-image">
+						<div class="circle circle-1 _no-border"></div>
+						<div class="circle circle-2 _no-border"></div>
+						<div class="circle circle-3 _no-border"></div>
+						<div class="circle circle-4 _no-border"></div>
+						<img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+					</a>
+					<div class="product-info">
+						<h4 class="product-info-name"><a href="">Кольцо из монет периода времён "Ивана Грозного"</a></h4>
+						<div class="product-info-prices">
+							<div class="old-price">2 000,00 ₽</div>
+							<div class="current-price">22 000,00 ₽</div>
+						</div>
+						<div class="product-info-buy">
+							<a href="">
+								<div class="circle circle-1"></div>
+								<div class="circle circle-2"></div>
+								<div class="circle circle-3"></div>
+								<div class="circle circle-4"></div>
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+<div class="bottom-seo">
+	<div class="container">
+		<hr class="bottom-seo-decore">
+		<h2>SEO текст</h2>
+		<p>Как и старший брат, Петр занял место царя в 1682 году, но по своему малолетству не мог принимать какие-либо решения. Много времени он посвятил изучению военного дела, пока страной управляла его старшая сестра Софья. Но в 1689 году после того, как царевна решила единолично возглавить Россию, Петр I жестоко расправился с её сторонниками, а её саму заключил в Новодевичий монастырь. В его стенах она провела остаток своих дней и умерла в 1704 году.
+		<p>На троне остались два царя – Иван V и Петр I. Но Иван сам отдал брату все полномочия и остался правителем лишь формально.</p>
+		<p>Как и старший брат, Петр занял место царя в 1682 году, но по своему малолетству не мог принимать какие-либо решения. Много времени он посвятил изучению военного дела, пока страной управляла его старшая сестра Софья. Но в 1689 году после того, как царевна решила единолично возглавить Россию, Петр I жестоко расправился с её сторонниками, а её саму заключил в Новодевичий монастырь. В его стенах она провела остаток своих дней и умерла в 1704 году.
+		<p>На троне остались два царя – Иван V и Петр I. Но Иван сам отдал брату все полномочия и остался правителем лишь формально.</p>
+	</div>
+</div>
+</main>
+{% include "partials/footer.twig" %}

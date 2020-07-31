@@ -1,0 +1,73 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="bread-container _collections">
+		<div class="container">		
+			<nav class="woocommerce-breadcrumb"><a href="">Главная</a>&nbsp;/&nbsp;О нас</nav>
+		</div>
+	</div>
+	<div class="page-banner" style="background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #0E0E0E 4.57%, rgba(15, 15, 15, 0) 17.72%),url({{ site.theme.link }}/assets/images/romanovy.jpg);">
+		<div class="container">
+			<div class="page-banner-before-title">1613-1917</div>
+			<h1 class="page-banner-title">«Романовы»</h1>
+			<div class="page-banner-text">Краткое описание коллекции “Грозный”. Далее идет рыба-тект. Консультация с широким активом позволяет оценить значение.</div>
+		</div>
+	</div>
+	<div class="catalog-content">
+		<div class="container">
+			<div class="catalog-products-content">
+				{% for item in 0..11 %}
+				<div class="product-item">
+					<a href class="product-image">
+						<div class="circle circle-1 _no-border"></div>
+						<div class="circle circle-2 _no-border"></div>
+						<div class="circle circle-3 _no-border"></div>
+						<div class="circle circle-4 _no-border"></div>
+						<img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+					</a>
+					<div class="product-info">
+						<h4 class="product-info-name"><a href="">Кольцо из монет периода времён "Ивана Грозного"</a></h4>
+						<div class="product-info-prices">
+							<div class="old-price">2 000,00 ₽</div>
+							<div class="current-price">22 000,00 ₽</div>
+						</div>
+						<div class="product-info-buy">
+							<a href="">
+								<div class="circle circle-1"></div>
+								<div class="circle circle-2"></div>
+								<div class="circle circle-3"></div>
+								<div class="circle circle-4"></div>
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<nav class="pagination">
+				<a aria-label="Предыдущая страница" href="" class="prev">
+					<svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1L1 6l5 5" stroke="#B2B2B2"/></svg>
+				</a>
+				<div class="nav-links">
+					<span aria-current="page" class="page-number page-numbers current current">1</span>
+					<a href="" class="page-number page-numbers">2</a>
+					<a href="" class="page-number page-numbers">3</a>
+					<a href="" class="page-number page-numbers">4</a>
+				</div>
+				<a aria-label="Следующая страница" href="" class="next ">
+					<svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11l5-5-5-5" stroke="#B2B2B2"/></svg>
+				</a>
+			</nav>
+		</div>
+	</div>
+	<div class="bottom-seo">
+		<div class="container">
+			<hr class="bottom-seo-decore">
+			<h2>SEO текст</h2>
+			<p>Как и старший брат, Петр занял место царя в 1682 году, но по своему малолетству не мог принимать какие-либо решения. Много времени он посвятил изучению военного дела, пока страной управляла его старшая сестра Софья. Но в 1689 году после того, как царевна решила единолично возглавить Россию, Петр I жестоко расправился с её сторонниками, а её саму заключил в Новодевичий монастырь. В его стенах она провела остаток своих дней и умерла в 1704 году.
+			<p>На троне остались два царя – Иван V и Петр I. Но Иван сам отдал брату все полномочия и остался правителем лишь формально.</p>
+			<p>Как и старший брат, Петр занял место царя в 1682 году, но по своему малолетству не мог принимать какие-либо решения. Много времени он посвятил изучению военного дела, пока страной управляла его старшая сестра Софья. Но в 1689 году после того, как царевна решила единолично возглавить Россию, Петр I жестоко расправился с её сторонниками, а её саму заключил в Новодевичий монастырь. В его стенах она провела остаток своих дней и умерла в 1704 году.
+			<p>На троне остались два царя – Иван V и Петр I. Но Иван сам отдал брату все полномочия и остался правителем лишь формально.</p>
+		</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

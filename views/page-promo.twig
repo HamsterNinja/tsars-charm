@@ -1,0 +1,27 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="bread-container">
+		<div class="container">		
+			<nav class="woocommerce-breadcrumb"><a href="">Главная</a>&nbsp;/&nbsp;О нас</nav>
+		</div>
+	</div>
+	<div class="promo-content">
+		<div class="container">
+			<h1 class="catalog-title">Царские дары</h1>
+			<div class="promo-content-inner">
+				{% for item in 0..3 %}
+				<div class="promo-item">
+					<a data-fancybox href="{{ site.theme.link }}/assets/images/promo.jpg" class="promo-item-inner">
+						<div class="circle circle-1 _big"></div>
+						<div class="circle circle-2 _big"></div>
+						<div class="circle circle-3 _big"></div>
+						<div class="circle circle-4 _big"></div>
+						<img src="{{ site.theme.link }}/assets/images/promo.jpg" alt="">
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

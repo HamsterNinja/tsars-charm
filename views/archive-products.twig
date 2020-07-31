@@ -2,40 +2,96 @@
 <main class='main-content' id="app">
 	<div class="bread-container">
 		<div class="container">		
-			<nav class="woocommerce-breadcrumb"><a href="">Главная</a>&nbsp;>&nbsp;О нас</nav>
+			<nav class="woocommerce-breadcrumb"><a href="">Главная</a>&nbsp;/&nbsp;О нас</nav>
 		</div>
 	</div>
 	<div class="catalog-content">
 		<div class="container">
 			<div class="catalog-header">
-				<h1 class="catalog-title"></h1>
+				<h1 class="catalog-title">Кольца</h1>
 				<div class="catalog-right">
 					<div class="catalog-view">Всего 20</div>
-				<div class="filter-item filter-main">
-					<div class="filter-item-content">	
-						<div class="filter-item-name">Цена от и до</div>
-						<div class="filter-item-content filter-item-price-content">
-							<img src="{{ site.theme.link }}/assets/images/filter-price.jpg" alt="">
-						</div>
+					<div class="filter-buttons">
+						<div class="button-filter">По умолчанию <img src="{{ site.theme.link }}/assets/images/" alt=""></div>
+						<div class="button-filter active">Фильтр <img src="{{ site.theme.link }}/assets/images/" alt=""></div>
 					</div>
-					<div class="filter-item-content">	
-						<div class="filter-item-name">Цена от и до</div>
-						<div class="filter-item-content filter-item-price-content">
-							<img src="{{ site.theme.link }}/assets/images/filter-price.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="filter-item filter-sort">
-					<div class="filter-item-name">Сортировать по <img src="{{ site.theme.link }}/assets/images/drop-down.svg" alt=""></div>
-					<div class="filter-item-content filter-item-sort-content active">
-						<div class="sort-value active">по умолчанию</div>
-						<div class="sort-value">по популярности</div>
-						<div class="sort-value">сначала дешевле</div>
-						<div class="sort-value">сначала дороже</div>
-					</div>
-				</div>
 				</div>
 			</div>
+			<div class="filter-main">
+							<div class="filter-item filter-item-price">	
+								<div class="filter-item-name">Цена от и до</div>
+								<div class="filter-item-content">
+									<img src="{{ site.theme.link }}/assets/images/filter-price.jpg" alt="">
+								</div>
+							</div>
+							<div class="filter-item filter-item-collections">	
+								<div class="filter-item-name">Коллекции</div>
+								<div class="filter-item-content">
+									{% for item in 0..5 %}
+									<a href="">Грозный<span>(15)</span></a>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="filter-item filter-item-materials">	
+								<div class="filter-item-name">Материалы</div>
+								<div class="filter-item-content">
+									{% for item in 0..5 %}
+									<a href="">Грозный<span>(15)</span></a>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+						<div class="filter-sort">
+							<div class="filter-item-content filter-item-sort-content active">
+								<button class="sort-value active">по умолчанию</button>
+								<button class="sort-value">по популярности</button>
+								<button class="sort-value">сначала дешевле</button>
+								<button class="sort-value">сначала дороже</button>
+							</div>
+						</div>
+			<div class="catalog-products-content">
+				{% for item in 0..11 %}
+					<div class="product-item">
+					<a href class="product-image">
+						<div class="circle circle-1 _no-border"></div>
+						<div class="circle circle-2 _no-border"></div>
+						<div class="circle circle-3 _no-border"></div>
+						<div class="circle circle-4 _no-border"></div>
+						<img src="{{ site.theme.link }}/assets/images/product.jpg" alt="">
+					</a>
+					<div class="product-info">
+						<h4 class="product-info-name"><a href="">Кольцо из монет периода времён "Ивана Грозного"</a></h4>
+						<div class="product-info-prices">
+							<div class="old-price">2 000,00 ₽</div>
+							<div class="current-price">22 000,00 ₽</div>
+						</div>
+						<div class="product-info-buy">
+							<a href="">
+								<div class="circle circle-1"></div>
+								<div class="circle circle-2"></div>
+								<div class="circle circle-3"></div>
+								<div class="circle circle-4"></div>
+								Купить
+							</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<nav class="pagination">
+				<a aria-label="Предыдущая страница" href="" class="prev">
+					<svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1L1 6l5 5" stroke="#B2B2B2"/></svg>
+				</a>
+				<div class="nav-links">
+					<span aria-current="page" class="page-number page-numbers current current">1</span>
+					<a href="" class="page-number page-numbers">2</a>
+					<a href="" class="page-number page-numbers">3</a>
+					<a href="" class="page-number page-numbers">4</a>
+				</div>
+				<a aria-label="Следующая страница" href="" class="next ">
+					<svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11l5-5-5-5" stroke="#B2B2B2"/></svg>
+				</a>
+			</nav>
 		</div>
 	</div>
 </main>
